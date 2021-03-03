@@ -1,0 +1,11 @@
+framework module AuxiliarySwiftExtensions {
+  umbrella header "AuxiliarySwiftExtensions.h"
+
+  export *
+  module * { export * }
+}
+
+module AuxiliarySwiftExtensions.Swift {
+    header "AuxiliarySwiftExtensions-Swift.h"
+    requires objc
+}
