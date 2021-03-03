@@ -1,0 +1,30 @@
+
+xcodebuild archive \
+-scheme AuxiliarySwiftExtensions \
+-configuration Release \
+-destination 'generic/platform=iOS Simulator' \
+-archivePath './build/AuxiliarySwiftExtensions.framework-iphonesimulator.xcarchive' \
+SKIP_INSTALL=NO \
+BUILD_LIBRARIES_FOR_DISTRIBUTION=YES
+
+xcodebuild archive \
+-scheme AuxiliarySwiftExtensions \
+-configuration Release \
+-destination 'generic/platform=iOS' \
+-archivePath './build/AuxiliarySwiftExtensions.framework-iphoneos.xcarchive' \
+SKIP_INSTALL=NO \
+BUILD_LIBRARIES_FOR_DISTRIBUTION=YES
+
+xcodebuild archive \
+-scheme AuxiliarySwiftExtensions \
+-configuration Release \
+-destination 'platform=macOS,arch=x86_64,variant=Mac Catalyst' \
+-archivePath './build/AuxiliarySwiftExtensions.framework-catalyst.xcarchive' \
+SKIP_INSTALL=NO \
+BUILD_LIBRARIES_FOR_DISTRIBUTION=YES
+
+xcodebuild -create-xcframework \
+-framework './build/AuxiliarySwiftExtensions.framework-iphonesimulator.xcarchive/Products/Library/Frameworks/AuxiliarySwiftExtensions.framework' \
+-framework './build/AuxiliarySwiftExtensions.framework-iphoneos.xcarchive/Products/Library/Frameworks/AuxiliarySwiftExtensions.framework' \
+-framework './build/AuxiliarySwiftExtensions.framework-catalyst.xcarchive/Products/Library/Frameworks/AuxiliarySwiftExtensions.framework' \
+-output './build/AuxiliarySwiftExtensions.xcframework'

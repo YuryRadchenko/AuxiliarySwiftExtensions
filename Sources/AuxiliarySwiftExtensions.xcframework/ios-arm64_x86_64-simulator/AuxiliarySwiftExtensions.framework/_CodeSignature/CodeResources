@@ -68,6 +68,10 @@
 		<data>
 		73O0NS5FeY+C3EVaMqjfwqNNHb8=
 		</data>
+		<key>build.txt</key>
+		<data>
+		Wp82lbXL8r4ET7G4A8+I09ye1vI=
+		</data>
 	</dict>
 	<key>files2</key>
 	<dict>
@@ -174,6 +178,13 @@
 			<key>hash2</key>
 			<data>
 			v1+SLZNIw3RYfW+eRyr5HPXk8LDZvtuPhnk3crQagDY=
+			</data>
+		</dict>
+		<key>build.txt</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			VtzvYMpYvllziw/YW89t3dy5BInu7y5p4NeZKMaxz1Q=
 			</data>
 		</dict>
 	</dict>

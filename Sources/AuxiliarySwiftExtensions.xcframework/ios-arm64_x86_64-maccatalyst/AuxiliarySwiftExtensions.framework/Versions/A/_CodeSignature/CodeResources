@@ -8,6 +8,10 @@
 		<data>
 		0KPXJFMdhNF/r93ooQMDBh2Lsxw=
 		</data>
+		<key>Resources/build.txt</key>
+		<data>
+		Wp82lbXL8r4ET7G4A8+I09ye1vI=
+		</data>
 	</dict>
 	<key>files2</key>
 	<dict>
@@ -121,6 +125,13 @@
 			<key>hash2</key>
 			<data>
 			q2hHmU27bIMQcBml/1H6x4Gn1IIySub3b01s/2FXixg=
+			</data>
+		</dict>
+		<key>Resources/build.txt</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			VtzvYMpYvllziw/YW89t3dy5BInu7y5p4NeZKMaxz1Q=
 			</data>
 		</dict>
 	</dict>
