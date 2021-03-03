@@ -14,8 +14,8 @@ let package = Package(
             targets: ["AuxiliarySwiftExtensions"]),
     ],
     targets: [
-        .target(
-            name: "AuxiliarySwiftExtensions",
-            dependencies: []),
+      .binaryTarget(
+        name: "AuxiliarySwiftExtensions",
+        path: "./Sources/AuxiliarySwiftExtensions.xcframework")
     ]
 )
