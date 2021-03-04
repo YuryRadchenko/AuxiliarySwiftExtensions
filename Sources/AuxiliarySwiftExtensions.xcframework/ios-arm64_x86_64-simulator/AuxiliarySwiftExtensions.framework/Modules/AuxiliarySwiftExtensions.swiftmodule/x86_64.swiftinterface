@@ -19,3 +19,8 @@ extension Int {
     get
   }
 }
+public class MyPublicClass2 {
+  public var someText: Swift.String?
+  public init(text: Swift.String?)
+  @objc deinit
+}
