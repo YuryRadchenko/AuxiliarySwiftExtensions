@@ -6,16 +6,16 @@ import PackageDescription
 let package = Package(
     name: "AuxiliarySwiftExtensions",
     platforms: [
-      .macOS(.v10_15), .iOS(.v12), .tvOS(.v14)
+        .macOS(.v10_15), .iOS(.v12), .tvOS(.v14)
     ],
     products: [
         .library(
             name: "AuxiliarySwiftExtensions",
-            targets: ["AuxiliarySwiftExtensions"]),
+            targets: ["AuxiliarySwiftExtensions"])
     ],
     targets: [
-      .binaryTarget(
-        name: "AuxiliarySwiftExtensions",
-        path: "./Sources/AuxiliarySwiftExtensions.xcframework")
+        .binaryTarget(
+            name: "AuxiliarySwiftExtensions",
+            path: "./Sources/AuxiliarySwiftExtensions.xcframework")
     ]
 )

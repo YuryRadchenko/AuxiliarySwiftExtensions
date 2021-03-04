@@ -4,6 +4,9 @@
 @_exported import AuxiliarySwiftExtensions
 import Foundation
 import Swift
+@_hasMissingDesignatedInitializers public class MyPublicClass {
+  @objc deinit
+}
 extension String {
   public var isEmail: Swift.Bool {
     get
