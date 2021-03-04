@@ -4,11 +4,18 @@
 @_exported import AuxiliarySwiftExtensions
 import Foundation
 import Swift
-@_hasMissingDesignatedInitializers public class MyPublicClass {
+public class MyPublicClass {
+  public var someText: Swift.String?
+  public init(text: Swift.String?)
   @objc deinit
 }
 extension String {
   public var isEmail: Swift.Bool {
+    get
+  }
+}
+extension Int {
+  public var lastNumeral: Swift.Int {
     get
   }
 }
